@@ -94,7 +94,7 @@ export default function withESI<P>(
 
       // Prevent Webpack and other bundlers to ship server.js
       // tslint:disable-next-line
-      const server = eval('require("./server")');
+      const server = require("./server");
       return (
         <div
           dangerouslySetInnerHTML={{

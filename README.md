@@ -6,6 +6,7 @@
 
 - removed `eval()`
 - fixed closing `<esi:include>` tag
+- added `onerror` attribute to `<esi:include>` tag
 
 <hr/>
 

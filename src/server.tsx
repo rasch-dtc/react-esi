@@ -70,7 +70,7 @@ export const createIncludeElement = (
     ([key, value]) => (attrs += ` ${key}="${value ? escapeAttr(value) : ""}"`)
   );
 
-  return `<esi:include${attrs} ></esi:include>`;
+  return `<esi:include${attrs} onerror="continue" ></esi:include>`;
 };
 
 type transformCallback = (error?: Error, data?: any) => void;
